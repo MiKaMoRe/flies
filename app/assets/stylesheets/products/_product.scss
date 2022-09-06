@@ -13,8 +13,15 @@
   }
 
   &__image{
+    display: flex;
+    justify-content: center;
+    a{
+      height: 200px;
+      max-width: 237px;;
+    }
     img{
-      width: 100%;
+      height: inherit;
+      max-width: inherit;
     }
   }
 

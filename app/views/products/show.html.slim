@@ -8,7 +8,10 @@
           = products_property.value
     .product-show__body
       .product-show__card
-        = image_tag @product.image
+        - if @product.image.attachment.nil?
+          = image_tag('icons/no_image.png')
+        - else
+          = image_tag @product.image
         .product-show__info
           div
             h3.product__article 

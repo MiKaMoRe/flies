@@ -18,9 +18,5 @@
     .products__list
       .products__list_grid
         = render @products
-      .products__pagination
-        = link_to '<-- |', products_path(page: @products.previous_page)
-        = @current_page
-        = ' страница из  '
-        = @products.total_pages
-        = link_to '| -->', products_path(page: @products.next_page)
+      = render 'shared/pagination', pagination: @products, name: :products
+

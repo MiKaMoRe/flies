@@ -1,0 +1,6 @@
+.pagination
+  = link_to image_tag('pagination/arrow_left_icon.png', class: 'pagination__arrow'), send("#{name}_path", page: pagination.previous_page)
+  = @current_page
+  = ' страница из  '
+  = pagination.total_pages
+  = link_to image_tag('pagination/arrow_right_icon.png', class: 'pagination__arrow'), send("#{name}_path", page: pagination.next_page)

@@ -1,0 +1,11 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  &__arrow{
+    width: 30px;
+    height: 30px;
+  }
+}

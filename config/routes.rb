@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations', 
     sessions: 'users/sessions'
   }
-  
+
   root to: "pages#index"
 
   resources :products, only: %i[index show] do

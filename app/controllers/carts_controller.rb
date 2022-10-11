@@ -47,7 +47,7 @@ class CartsController < ApplicationController
         flash[:notice] = 'Order successfully created'
 
         @cart = current_user.carts.build
-    
+
         if @cart.save
           flash[:notice] = 'New cart successfully craeated'
         else
@@ -72,7 +72,7 @@ class CartsController < ApplicationController
   end
 
   def find_carts_products
-    @carts_products = @cart.carts_products
+    @carts_products = @cart&.carts_products || []
   end
 
   def find_product

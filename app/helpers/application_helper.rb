@@ -1,6 +1,6 @@
 module ApplicationHelper
   def current_cart
-    current_user ? current_user.carts.active : 0
+    current_user ? current_user.active_cart : 0
   end
 
   def resource_name

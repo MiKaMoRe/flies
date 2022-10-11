@@ -15,8 +15,8 @@
       h3= product.name
       h4= "#{product.price} рублей"
       .product__amount
-        p= "В наличии: " 
-        input#amount value=product.amount disabled=""
+        p= "В наличии: "
+        p#amount= product.amount
         
     .product__buybutton
       - if product.amount > 0

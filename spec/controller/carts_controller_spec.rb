@@ -11,12 +11,12 @@ RSpec.describe CartsController, type: :controller do
       before do
         login(user)
         get :show, params: { id: cart }
-      end 
+      end
 
       it 'assigns the requested cart to @cart' do
         expect(assigns(:cart)).to eq cart
       end
-  
+
       it 'renders show view' do
         expect(response).to render_template :show
       end

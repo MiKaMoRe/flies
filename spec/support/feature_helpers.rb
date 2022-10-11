@@ -2,9 +2,8 @@
 
 module FeatureHelpers
   def sign_in(user)
-    visit new_user_session_path
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
-    click_on 'Login'
+    fill_in id: 'email_signin', with: user.email
+    fill_in id: 'password_signin', with: user.password
+    click_on id: 'popup-nav_signin'
   end
 end

@@ -12,7 +12,7 @@ class ActiveStorage::Engine
     .delete('image/svg+xml')
 end
 
-module Nenavalniy
+module FliesShop
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
